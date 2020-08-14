@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" >
+    <title>About Belajar Coding</title>
+    <style>
+      header {
+        background:url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');}
+    </style>
+  </head>
+  <body class="bg-gray-400">
+
+
+
+    <!-- component -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <nav class="flex items-center bg-white p-3 flex-wrap">
+    <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+        <a>Belajar Coding</a>
+    </div>
+
+      <button class="text-black inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+        <i class="material-icons">menu</i>
+      </button>
+      <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+        <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          <a href="index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+            <span>Home</span></a>
+          <a href="index.html#produk" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+            <span>Ebook</span></a>
+          <a href="about.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+            <span>About</span></a>
+          <a href="kontak.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+            <span>Contact</span></a>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+      $(".nav-toggler").each(function(_, navToggler) {
+        var target = $(navToggler).data("target");
+        $(navToggler).on("click", function() {
+          $(target).animate({
+            height: "toggle"
+          });
+        });
+      });
+    });
+    </script>
+
+
+
+
+        <!-- Header With Picture -->
+        	<header id="up" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+        		<div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+        			<div class="mx-2 text-center">
+        				<h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">
+        					<span class="text-white">Tentang Kami</span>
+                   </h1>
+            </div>
+        </header>
+
+
+        <!-- Pengenalan -->
+            <div class="hero bg-gray-100 h-screen w-screen pt-16 px-4 ">
+                <!-- container -->
+                <div class="container px-4 sm:px-8 lg:px-16 xl:px-20 mx-auto">
+                    <!-- hero wrapper -->
+                    <div class="hero-wrapper grid grid-cols-1 md:grid-cols-12 gap-8 items-center my-6">
+                        <!-- hero text -->
+                        <div class="hero-text col-span-6">
+                            <h1 class=" font-bold text-4xl md:text-5xl max-w-xl text-gray-900 leading-tight">Belajar Coding</h1>
+                            <hr class=" w-12 h-1 bg-orange-500 rounded-full mt-8">
+                            <p class="text-gray-800 text-lg leading-relaxed mt-8 font-semibold">
+                              Merupakan sebuah web yang menyediakan berbagai macam eBook pemrograman.
+                              Semua orang dapat mengakses layanan ini. eBook yang kami buat juga sangat cocok bagi para pemula.
+                            </p>
+                        </div>
+                        <!-- Gambar -->
+                        <div class="hero-text col-span-6 ">
+                          <div class="px-10 flex items-center justify-center">
+                            <img class="relative rounded-lg" src="assets/about.jpg" alt="">
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+        <!-- component -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <style>
+        .bannerFondo{
+                height: 400px;
+        }
+        </style>
+        	<div class="bannerFondo bg-blue-800	bg-left-top bg-auto bg-repeat-x" style="background-image: url(./img/continuartl_4.png)"></div>
+              <div class="-mt-64">
+                <div class="w-full text-center mb-12">
+                  <p class="text-sm tracking-widest text-white">Belajar Coding</p>
+                  <h1 class="font-bold text-5xl text-white">
+                      Keunggulan Kami
+                  </h1>
+              </div>
+              <!-- Deskripsi -->
+              <div class="flex grid grid-cols-1 gap-4 sm:grid-cols-3 py-4 ">
+
+                <!-- Card Pertama -->
+                  <div class="p-2 sm:p-10 text-center cursor-pointer">
+                      <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-500  bg-white">
+                        <div class="space-y-10">
+                        <div class="px-6 py-4">
+                        <div class="space-y-5">
+                        <div class="font-bold text-xl uppercase mb-2">Mudah</div>
+                          <p class="text-gray-700 text-base">
+                            Anda dapat dengan mudah mengakses file tujuan yang anda inginkan tanpa proses yang rumit.
+                          </p>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                  </div>
+
+                  <!-- Card Kedua -->
+                  <div class="p-2 sm:p-10 text-center cursor-pointer text-white">
+                      <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900 hover:shadow-2xl transition duration-500">
+                          <div class="space-y-10">
+                          <div class="px-6 py-4">
+                          <div class="space-y-5">
+                          <div class="font-bold text-xl uppercase mb-2">Efisien</div>
+                            <p class="text-base">
+                              Anda dapat mendapatkan banyak Ebook sekaligus pada web ini, sehingga tidak menghabiskan banyak waktu.
+                            </p>
+                          </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Card Ketiga -->
+                  <div class="p-2 sm:p-10 text-center cursor-pointer translate-x-2">
+                      <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white ">
+                          <div class="space-y-10">
+                          <div class="px-6 py-4">
+                          <div class="space-y-5">
+                          <div class="font-bold text-xl uppercase mb-2">Lengkap</div>
+                            <p class="text-gray-700 text-base">
+                              Materi yang tersedia pada setiap Ebook lengkap mulai dari pengenalan hingga latihan.
+                            </p>
+                          </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              </div>
+
+
+
+
+              <!-- component -->
+              <div class="bg-gray-100">
+                 <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+                   <!-- Footer Bagian Pertama -->
+                    <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                       <div class="text-xs uppercase text-gray-500 font-medium">Halaman</div>
+                         <a class="my-3 block" href="about.html">Tentang Kami <span class="text-teal-600 text-xs p-1"></span></a>
+                         <a class="my-3 block" href="index.html#produk">Daftar eBook <span class="text-teal-600 text-xs p-1"></span></a>
+                    </div>
+                    <!-- Footer Bagian Kedua -->
+                    <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                       <div class="text-xs uppercase text-gray-500 font-medium">Support</div>
+                         <a class="my-3 block" href="index.html#keunggulan">Keunggulan Kami <span class="text-teal-600 text-xs p-1"></span></a>
+                    </div>
+                    <!-- Footer Bagian Ketiga -->
+                    <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                       <div class="text-xs uppercase text-gray-500 font-medium">Sosial Media</div>
+                         <a class="my-3 block" href="https://www.instagram.com/safiraadf/" target="_blank">Instagram</a>
+                         <a class="my-3 block" href="https://www.facebook.com/safira.dwifebrianti.39/" target="_blank">Facebook</a>
+                         <a class="my-3 block" href="https://youtu.be/hxGsqgfhMXM" target="_blank">Youtube</a>
+                         <a class="my-3 block" href="https://github.com/SafiraDwiFebrianti" target="_blank">Github</a>
+                    </div>
+                    <!-- Footer Bagian Keempat -->
+                    <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                       <div class="text-xs uppercase text-gray-500 font-medium">Kontak Kami</div>
+                         <a class="my-3 block">Tulungagung, Jawa Timur<span class="text-teal-600 text-xs p-1"></span></a>
+                         <a class="my-3 block">(+62) 82336669604<span class="text-teal-600 text-xs p-1"></span></a>
+                         <a class="my-3 block">safiradwifebrianti02@gmail.com<span class="text-teal-600 text-xs p-1"></span></a>
+                    </div>
+                 </div>
+              </div>
+
+  </body>
+</html>

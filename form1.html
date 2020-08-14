@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Data Diri</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" >
+  </head>
+
+  <body>
+    <body class="bg-gray-400">
+      <!-- component -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+      <nav class="flex items-center bg-white p-3 flex-wrap">
+              <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+                   <a>Belajar Coding</a>
+              </div>
+
+            <button class="text-black inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+              <i class="material-icons">menu</i>
+            </button>
+            <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+              <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+                <a href="index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                  <span>Home</span>
+                </a>
+                <a href="index.html#produk" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                  <span>Ebook</span>
+                </a>
+                <a href="about.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                  <span>About</span>
+                </a>
+                <a href="kontak.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                  <span>Contact</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function() {
+        $(".nav-toggler").each(function(_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function() {
+            $(target).animate({
+              height: "toggle"
+            });
+          });
+        });
+      });
+      </script>
+
+
+      <!-- component -->
+      <div class="p-12 flex flex-wrap items-center justify-center">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4Q5eJUa3a0p7MxHJMDBHz2sQDy2pmlTATVhA7VkqnoxUbrw/viewform?embedded=true" width="640" height="535" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+      </div>
+
+    </body>
+  </body>
+</html>

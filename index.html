@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" >
+    <title>Situs Ebook Pemrograman</title>
+  </head>
+
+  <body>
+    <body class="bg-gray-400">
+
+          <!-- component -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+          <nav class="flex items-center bg-white p-3 flex-wrap">
+                  <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+                       <a>Belajar Coding</a>
+                  </div>
+
+                <button class="text-black inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+                  <i class="material-icons">menu</i>
+                </button>
+                <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                  <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+                    <a href="index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                      <span>Home</span>
+                    </a>
+                    <a href="index.html#produk" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                      <span>Ebook</span>
+                    </a>
+                    <a href="about.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                      <span>About</span>
+                    </a>
+                    <a href="kontak.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                      <span>Contact</span>
+                    </a>
+                  </div>
+                </div>
+              </nav>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+          <script>
+            $(document).ready(function() {
+            $(".nav-toggler").each(function(_, navToggler) {
+              var target = $(navToggler).data("target");
+              $(navToggler).on("click", function() {
+                $(target).animate({
+                  height: "toggle"
+                });
+              });
+            });
+          });
+          </script>
+
+
+
+
+
+          <div class="flex bg-white" style="height:600px;">
+              <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
+                  <div>
+                      <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">Mulai Dari <span class="text-indigo-600">Sini</span></h2>
+                      <p class="mt-2 text-sm text-gray-600 md:text-base">Jika anda saat ini sedang ingin belajar Bahasa Pemrograman. Akan tetapi bingung bagaimana cara mulai mempelajarinya? Anda bisa mempelajari dengan mudah berbagai macam bahasa pemrograman disini. </p>
+                      <div class="flex justify-center lg:justify-start mt-6">
+                          <a class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="about.html">Pelajari Lebih Lanjut</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="hidden lg:block lg:w-1/2" style="clip-path:polygon(10% 0, 100% 0%, 100% 100%, 0 100%)">
+                  <div class="h-full object-cover" style="background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80)">
+                      <div class="h-full bg-black opacity-25"></div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+
+
+      <!-- component -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+      <style>
+      .bannerFondo{
+              height: 400px;
+      }
+      </style>
+      	<div id="keunggulan" class="bannerFondo bg-blue-800	bg-left-top bg-auto bg-repeat-x" style="background-image: url(./img/continuartl_4.png)"></div>
+            <div class="-mt-64 ">
+              <div class="w-full text-center">
+                <p class="text-sm tracking-widest text-white">Belajar Coding</p>
+                <h1 class="font-bold text-5xl text-white">
+                    Keunggulan Kami
+                </h1>
+            </div>
+            <!-- Deskripsi -->
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:mx-auto ">
+              <!-- Card Pertama -->
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-500  bg-white">
+                      <div class="space-y-10">
+                      <div class="px-6 py-4">
+                      <div class="space-y-5">
+                      <div class="font-bold text-xl uppercase mb-2">Mudah</div>
+                        <p class="text-gray-700 text-base">
+                          Anda dapat dengan mudah mengakses file tujuan yang anda inginkan tanpa proses yang rumit.
+                        </p>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- Card Kedua -->
+                <div class="p-2 sm:p-10 text-center cursor-pointer text-white">
+                    <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg bg-gray-900 hover:shadow-2xl transition duration-500">
+                        <div class="space-y-10">
+                        <div class="px-6 py-4">
+                        <div class="space-y-5">
+                        <div class="font-bold text-xl uppercase mb-2">Efisien</div>
+                          <p class="text-base">
+                            Anda dapat mendapatkan banyak Ebook sekaligus pada web ini, sehingga tidak menghabiskan banyak waktu.
+                          </p>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer translate-x-2">
+                    <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white ">
+                        <div class="space-y-10">
+                        <div class="px-6 py-4">
+                        <div class="space-y-5">
+                        <div class="font-bold text-xl uppercase mb-2">Lengkap</div>
+                          <p class="text-gray-700 text-base">
+                            Materi yang tersedia pada setiap Ebook lengkap mulai dari pengenalan hingga latihan.
+                          </p>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+      <!-- Bagian Pemilihan Buku -->
+      <div class="grid p-12" id="produk">
+        <div class="container">
+          <div class="px-4 py-4 mx-auto mb-8">
+          <div class="bg-white w-full rounded">
+          <!-- component -->
+          <div class="container flex flex-wrap pt-4 pb-10 m-auto mt-6 md:mt-15 lg:px-12 xl:px-16">
+              <div class="w-full px-0 lg:px-4">
+                <h2 class="px-12 text-base font-bold text-center md:text-2xl text-blue-700">
+                  Pilih Sesuai Kebutuhan Anda
+                </h2>
+                <p class="py-1 text-sm text-center text-blue-700 mb-10">
+                  Dapatkan E-book yang Anda inginkan GRATIS selama masa promo masih berlaku.
+                </p>
+                <div class="flex flex-wrap items-center justify-center py-4 pt-0">
+                  <!-- Card Pertama -->
+                  <div class="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                    <label class="flex flex-col rounded-lg shadow-lg group relative cursor-pointer hover:shadow-2xl">
+                      <div class="w-full px-4 py-6 rounded-t-lg card-section-1 bg-gray-300">
+                        <h3 class="mx-auto text-base font-semibold text-center underline text-black mb-4 group-hover:text-white">
+                          Ebook HTML CSS
+                        </h3>
+                  <!-- Gambar -->
+                  <div class="relative px-10 flex items-center justify-center">
+                    <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+                    <img class="relative w-40 rounded-full" src="assets/4.png" alt="">
+                  </div>
+                </div>
+                <!-- Block Bawah -->
+                <div class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500">
+                  <p class="text-xl text-white line-through ">
+                    Rp 100K
+                  </p>
+                    <span class="text-2xl">GRATIS</span>
+                    <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white hover:bg-black hover:text-blue-600 border border-transparent rounded text-blue-500" >
+                      <a href="form1.html">Unduh</a>
+                    </button>
+                </div>
+                    </label>
+                  </div>
+                  <!-- Card Kedua -->
+                  <div class="w-full p-4 md:w-1/2 lg:w-1/4">
+                    <label class="flex flex-col rounded-lg shadow-lg relative cursor-pointer hover:shadow-2xl">
+                      <div class="w-full px-4 py-6 rounded-t-lg bg-white card-section-1 bg-purple-100">
+                        <h3 class="mx-auto text-base font-semibold text-center underline text-black mb-4 group-hover:text-white">
+                          E-book Javascript
+                        </h3>
+                    <!-- Gambar -->
+                    <div class="relative px-10 flex items-center justify-center">
+                      <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+                      <img class="relative w-40 rounded-full" src="assets/2.png" alt="">
+                    </div>
+                  </div>
+                    <!-- Block Bawah -->
+                    <div class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-purple-400">
+                      <p class="  xt-xl text-white line-through ">
+                        Rp 100K
+                      </p>
+                      <span class="text-2xl">GRATIS</span>
+                      <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white hover:bg-black hover:text-purple-600 border border-transparent rounded text-blue-500">
+                        <a href="form2.html">Unduh</a>
+                      </button>
+                    </div>
+                  </label>
+                </div>
+
+
+                  <!-- Card Ketiga -->
+                  <div class="w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+                    <label class="flex flex-col rounded-lg shadow-lg group relative cursor-pointer hover:shadow-2xl">
+                      <div class="w-full px-4 py-6 rounded-t-lg card-section-1 bg-gray-300">
+                        <h3 class="mx-auto text-base font-semibold text-center underline text-black mb-4 group-hover:text-white">
+                          E-book Laravel
+                        </h3>
+                        <!-- Gambar -->
+                        <div class="relative px-10 flex items-center justify-center">
+                          <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+                          <img class="relative w-40 rounded-full" src="assets/3.png" alt="">
+                        </div>
+                      </div>
+                      <!-- Block Bawah -->
+                      <div class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-blue-500">
+                        <p class="text-xl text-white line-through ">
+                          Rp 100K
+                        </p>
+                          <span class="text-2xl text-sans">GRATIS</span>
+                          <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white hover:bg-black hover:text-blue-600 border border-transparent rounded text-blue-500">
+                            <a href="form3.html">Unduh</a>
+                          </button>
+                      </div>
+                    </label>
+                  </div>
+
+
+                  <!-- Card Keempat -->
+                  <div class="w-full p-4 md:w-1/2 lg:w-1/4">
+                    <label class="flex flex-col rounded-lg shadow-lg relative cursor-pointer hover:shadow-2xl">
+                      <div class="w-full px-4 py-6 rounded-t-lg bg-white card-section-1 bg-purple-100">
+                        <h3 class="mx-auto text-base font-semibold text-center underline text-black mb-4 group-hover:text-white">
+                          E-book PHP MySQL
+                        </h3>
+                        <!-- Gambar -->
+                        <div class="relative px-10 flex items-center justify-center">
+                          <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+                          <img class="relative w-40 rounded-full" src="assets/1.png" alt="">
+                        </div>
+                      </div>
+                      <!-- Block Bawah -->
+                      <div class="flex flex-col items-center justify-center w-full h-full py-6 rounded-b-lg bg-purple-400">
+                        <p class="text-xl text-white line-through ">
+                          Rp 100K
+                        </p>
+                        <span class="text-2xl">GRATIS</span>
+                        <button class="w-5/6 py-2 mt-2 font-semibold text-center uppercase bg-white hover:bg-black hover:text-purple-600 border border-transparent rounded text-blue-500">
+                          <a href="form4.html">Unduh</a>
+                        </button>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- component -->
+    <div class="bg-gray-100">
+       <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+         <!-- Footer Bagian Pertama -->
+          <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+             <div class="text-xs uppercase text-gray-500 font-medium">Halaman</div>
+               <a class="my-3 block" href="about.html">Tentang Kami <span class="text-teal-600 text-xs p-1"></span></a>
+               <a class="my-3 block" href="index.html#produk">Daftar eBook <span class="text-teal-600 text-xs p-1"></span></a>
+          </div>
+          <!-- Footer Bagian Kedua -->
+          <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+             <div class="text-xs uppercase text-gray-500 font-medium">Support</div>
+               <a class="my-3 block" href="index.html#keunggulan">Keunggulan Kami <span class="text-teal-600 text-xs p-1"></span></a>
+          </div>
+          <!-- Footer Bagian Ketiga -->
+          <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+             <div class="text-xs uppercase text-gray-500 font-medium">Sosial Media</div>
+               <a class="my-3 block" href="https://www.instagram.com/safiraadf/" target="_blank">Instagram</a>
+               <a class="my-3 block" href="https://www.facebook.com/safira.dwifebrianti.39/" target="_blank">Facebook</a>
+               <a class="my-3 block" href="https://youtu.be/hxGsqgfhMXM" target="_blank">Youtube</a>
+               <a class="my-3 block" href="https://github.com/SafiraDwiFebrianti" target="_blank">Github</a>
+          </div>
+          <!-- Footer Bagian Keempat -->
+          <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+             <div class="text-xs uppercase text-gray-500 font-medium">Kontak Kami</div>
+               <a class="my-3 block">Tulungagung, Jawa Timur<span class="text-teal-600 text-xs p-1"></span></a>
+               <a class="my-3 block">(+62) 82336669604<span class="text-teal-600 text-xs p-1"></span></a>
+               <a class="my-3 block">safiradwifebrianti02@gmail.com<span class="text-teal-600 text-xs p-1"></span></a>
+          </div>
+       </div>
+    </div>
+
+
+
+
+
+    <div class="bg-gray-100 pt-2 ">
+       <div class="flex pb-5 px-3 m-auto pt-5 border-t text-gray-800 text-sm flex-col md:flex-row max-w-6xl">
+          <div class="mt-2 text-red-700">© Copyright 2020. All Rights Reserved.</div>
+       </div>
+    </div>
+
+
+    </body>
+</html>

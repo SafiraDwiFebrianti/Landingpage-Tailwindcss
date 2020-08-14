@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css">
+    <title>Contact</title>
+    <style>
+        header {
+          background:url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');}
+    </style>
+  </head>
+
+  <body class="bg-gray-400">
+
+    <!-- component -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css" integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <nav class="flex items-center bg-white p-3 flex-wrap">
+            <div class="text-2xl font-bold text-gray-800 md:text-3xl">
+                 <a>Belajar Coding</a>
+            </div>
+
+          <button class="text-black inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler" data-target="#navigation">
+            <i class="material-icons">menu</i>
+          </button>
+          <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+            <div class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+              <a href="index.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                <span>Home</span>
+              </a>
+              <a href="index.html#produk" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                <span>Ebook</span>
+              </a>
+              <a href="about.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                <span>About</span>
+              </a>
+              <a href="kontak.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+                <span>Contact</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+      $(".nav-toggler").each(function(_, navToggler) {
+        var target = $(navToggler).data("target");
+        $(navToggler).on("click", function() {
+          $(target).animate({
+            height: "toggle"
+          });
+        });
+      });
+    });
+    </script>
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <style>
+        .bannerFondo{
+                height: 350px;
+        }
+        </style>
+          <div class="bannerFondo bg-blue-800	bg-left-top bg-auto bg-repeat-x" style="background-image: url(./img/continuartl_4.png)"></div>
+              <div class="-mt-64 ">
+                <div class="w-full text-center">
+                  <h1 class="font-bold text-4xl text-white">
+                      Dibuat Oleh
+                  </h1>
+              </div>
+
+        <!-- component -->
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden my-4 mx-auto mt-24">
+          <img class="w-full h-56 object-cover object-center" src="assets/fira.jpg" alt="avatar">
+          <div class="flex items-center px-6 py-3 bg-gray-900">
+              <h1 class="mx-3 text-white font-semibold text-lg">Student</h1>
+          </div>
+          <div class="py-4 px-6">
+            <h1 class="text-xl font-bold text-gray-800">Safira Dwi Febrianti</h1>
+              <p class="py-2 text-base text-gray-700">Student at SMK Telkom Malang</p>
+
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                <path d="M239.208 343.937c-17.78 10.103-38.342 15.876-60.255 15.876-21.909 0-42.467-5.771-60.246-15.87C71.544 358.331 42.643 406 32 448h293.912c-10.639-42-39.537-89.683-86.704-104.063zM178.953 120.035c-58.479 0-105.886 47.394-105.886 105.858 0 58.464 47.407 105.857 105.886 105.857s105.886-47.394 105.886-105.857c0-58.464-47.408-105.858-105.886-105.858zm0 186.488c-33.671 0-62.445-22.513-73.997-50.523H252.95c-11.554 28.011-40.326 50.523-73.997 50.523z"/><g><path d="M322.602 384H480c-10.638-42-39.537-81.691-86.703-96.072-17.781 10.104-38.343 15.873-60.256 15.873-14.823 0-29.024-2.654-42.168-7.49-7.445 12.47-16.927 25.592-27.974 34.906C289.245 341.354 309.146 364 322.602 384zM306.545 200h100.493c-11.554 28-40.327 50.293-73.997 50.293-8.875 0-17.404-1.692-25.375-4.51a128.411 128.411 0 0 1-6.52 25.118c10.066 3.174 20.779 4.862 31.895 4.862 58.479 0 105.886-47.41 105.886-105.872 0-58.465-47.407-105.866-105.886-105.866-37.49 0-70.427 19.703-89.243 49.09C275.607 131.383 298.961 163 306.545 200z"/></g>
+              </svg>
+                <h1 class="px-2 text-sm">(+62) 82336669604</h1>
+              </div>
+
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                <path d="M256 32c-88.004 0-160 70.557-160 156.801C96 306.4 256 480 256 480s160-173.6 160-291.199C416 102.557 344.004 32 256 32zm0 212.801c-31.996 0-57.144-24.645-57.144-56 0-31.357 25.147-56 57.144-56s57.144 24.643 57.144 56c0 31.355-25.148 56-57.144 56z"/>
+                </svg>
+                  <h1 class="px-2 text-sm">Tulungagung, Jawa Timur</h1>
+              </div>
+
+              <div class="flex items-center mt-4 text-gray-700">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 512 512">
+                <path d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"/>
+                </svg>
+                  <h1 class="px-2 text-sm">safiradwifebrianti02@gmail.com</h1>
+              </div>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- component -->
+      <div class="bg-gray-100">
+         <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-center">
+           <!-- Footer Bagian Pertama -->
+            <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+               <div class="text-xs uppercase text-gray-500 font-medium">Halaman</div>
+                 <a class="my-3 block" href="about.html">Tentang Kami <span class="text-teal-600 text-xs p-1"></span></a>
+                 <a class="my-3 block" href="index.html#produk">Daftar eBook <span class="text-teal-600 text-xs p-1"></span></a>
+            </div>
+            <!-- Footer Bagian Kedua -->
+            <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+               <div class="text-xs uppercase text-gray-500 font-medium">Support</div>
+                 <a class="my-3 block" href="index.html#keunggulan">Keunggulan Kami <span class="text-teal-600 text-xs p-1"></span></a>
+            </div>
+            <!-- Footer Bagian Ketiga -->
+            <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+               <div class="text-xs uppercase text-gray-500 font-medium">Sosial Media</div>
+                 <a class="my-3 block" href="https://www.instagram.com/safiraadf/" target="_blank">Instagram</a>
+                 <a class="my-3 block" href="https://www.facebook.com/safira.dwifebrianti.39/" target="_blank">Facebook</a>
+                 <a class="my-3 block" href="https://youtu.be/hxGsqgfhMXM" target="_blank">Youtube</a>
+                 <a class="my-3 block" href="https://github.com/SafiraDwiFebrianti" target="_blank">Github</a>
+            </div>
+            <!-- Footer Bagian Keempat -->
+            <div class="py-6 px-12 w-full p-4 md:w-1/2 lg:w-1/4 plan-card">
+               <div class="text-xs uppercase text-gray-500 font-medium">Kontak Kami</div>
+                 <a class="my-3 block">Tulungagung, Jawa Timur<span class="text-teal-600 text-xs p-1"></span></a>
+                 <a class="my-3 block">(+62) 82336669604<span class="text-teal-600 text-xs p-1"></span></a>
+                 <a class="my-3 block">safiradwifebrianti02@gmail.com<span class="text-teal-600 text-xs p-1"></span></a>
+            </div>
+         </div>
+      </div>
+
+
+  </body>
+</html>
